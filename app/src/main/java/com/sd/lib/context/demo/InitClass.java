@@ -6,6 +6,7 @@ public class InitClass
 {
     public InitClass()
     {
+        // 初始化操作
         Log.i(InitClass.class.getSimpleName(), "InitClass created");
     }
 }
