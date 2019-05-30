@@ -4,7 +4,7 @@
     <application>
         <provider
             android:name="com.sd.lib.context.ContextProvider"
-            android:authorities="${applicationId}.context.provider"
+            android:authorities="${applicationId}.context-provider"
             android:exported="false"
             android:multiprocess="true" />
     </application>
