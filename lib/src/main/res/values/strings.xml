@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- Context被初始化的时候需要创建的Class全名 -->
+    <string name="lib_context_init_class"></string>
+
+</resources>
