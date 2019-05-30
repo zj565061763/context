@@ -33,5 +33,4 @@ public class InitClass
         Log.i(InitClass.class.getSimpleName(), "InitClass created");
     }
 }
-
 ```
