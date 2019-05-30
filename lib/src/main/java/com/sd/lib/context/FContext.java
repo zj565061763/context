@@ -10,7 +10,7 @@ public class FContext
     {
     }
 
-    public static final void set(Context context)
+    static final void set(Context context)
     {
         if (sContext == null)
             sContext = context.getApplicationContext();
