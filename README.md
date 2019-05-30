@@ -6,5 +6,6 @@
 
 # Example
 ```java
-String appName = FContext.get().getResources().getString(R.string.app_name);
+Context context = FContext.get();
+String appName = context.getResources().getString(R.string.app_name);
 ```
