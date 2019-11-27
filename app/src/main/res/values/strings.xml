@@ -1,7 +1,3 @@
 <resources>
     <string name="app_name">context</string>
-
-    <!-- Context被初始化的时候需要创建的Class全名 -->
-    <string name="lib_context_init_class">com.sd.lib.context.demo.InitClass</string>
-
 </resources>

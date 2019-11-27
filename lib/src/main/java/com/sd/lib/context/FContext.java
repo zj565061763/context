@@ -12,23 +12,10 @@ public class FContext
 
     static final void set(Context context)
     {
-        sContext = context.getApplicationContext();
-        init(sContext);
-    }
+        if (context == null)
+            return;
 
-    private static void init(Context context)
-    {
-        final String className = context.getResources().getString(R.string.lib_context_init_class);
-        if (className != null && className.length() > 0)
-        {
-            try
-            {
-                Class.forName(className).newInstance();
-            } catch (Exception e)
-            {
-                e.printStackTrace();
-            }
-        }
+        sContext = context.getApplicationContext();
     }
 
     public static final Context get()
