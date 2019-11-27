@@ -10,7 +10,7 @@ public class FContext
     {
     }
 
-    static final void set(Context context)
+    public static final void set(Context context)
     {
         if (context == null)
             return;
