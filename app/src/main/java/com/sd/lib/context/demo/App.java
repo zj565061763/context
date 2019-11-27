@@ -11,6 +11,6 @@ public class App extends Application
     public void onCreate()
     {
         super.onCreate();
-        Log.i(MainActivity.TAG, "onCreate:" + this + " context:" + FContext.get());
+        Log.i(MainActivity.TAG, "onCreate:" + this + " context:" + FContext.get() + " appName:" + Constant.APP_NAME);
     }
 }
