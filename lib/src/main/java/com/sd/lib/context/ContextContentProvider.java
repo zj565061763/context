@@ -5,11 +5,11 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 
-public final class ContextProvider extends ContentProvider {
+public final class ContextContentProvider extends ContentProvider {
     @Override
     public boolean onCreate() {
         FContext.set(getContext());
-        return false;
+        return true;
     }
 
     @Override
