@@ -9,6 +9,8 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.i(MainActivity.TAG, "onCreate:" + this + " context:" + FContext.get() + " appName:" + Constant.APP_NAME);
+        Log.i(MainActivity.TAG, "onCreate:" + this
+                + " context:" + FContext.get()
+                + " appName:" + Constant.APP_NAME);
     }
 }

@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.i(MainActivity.TAG, "onCreate:" + this + " context:" + FContext.get());
+        Log.i(MainActivity.TAG, "onCreate:" + this
+                + " context:" + FContext.get());
     }
 }
