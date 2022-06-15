@@ -2,24 +2,18 @@ package com.sd.lib.context;
 
 import android.content.Context;
 
-public class FContext
-{
+public class FContext {
     private static Context sContext;
 
-    protected FContext()
-    {
+    protected FContext() {
     }
 
-    public static final void set(Context context)
-    {
-        if (context == null)
-            return;
-
+    public static void set(Context context) {
+        if (context == null) return;
         sContext = context.getApplicationContext();
     }
 
-    public static final Context get()
-    {
+    public static Context get() {
         return sContext;
     }
 }
