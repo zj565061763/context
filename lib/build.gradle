@@ -8,10 +8,11 @@ def libArtifactId = "context"
 def libVersionName = "1.1.0"
 
 android {
-    compileSdk 32
+    namespace 'com.sd.lib.context'
+    compileSdk 33
     defaultConfig {
         minSdk 16
-        targetSdk 32
+        targetSdk 33
     }
 
     buildTypes {
@@ -45,7 +46,6 @@ afterEvaluate {
                 artifactId = libArtifactId
                 version = libVersionName
 
-                // 上传源码
                 artifact generateSourcesJar
             }
         }

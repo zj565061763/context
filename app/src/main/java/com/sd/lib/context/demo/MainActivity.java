@@ -5,6 +5,7 @@ import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.sd.demo.context.R;
 import com.sd.lib.context.FContext;
 
 public class MainActivity extends AppCompatActivity {

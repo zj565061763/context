@@ -4,11 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    namespace 'com.sd.demo.context'
+    compileSdk 33
     defaultConfig {
-        applicationId "com.sd.lib.context.demo"
+        applicationId "com.sd.demo.context"
         minSdk 19
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
     }
@@ -21,6 +22,6 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation project(path: ':lib')
 }
