@@ -1,16 +1,18 @@
-package com.sd.lib.context.demo;
+package com.sd.lib.context.demo
 
-import android.app.Application;
-import android.util.Log;
+import android.app.Application
+import com.sd.lib.context.FContext
 
-import com.sd.lib.context.FContext;
-
-public class App extends Application {
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        Log.i(MainActivity.TAG, "onCreate:" + this
-                + " context:" + FContext.get()
-                + " appName:" + Constant.APP_NAME);
+class App : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        logMsg {
+            """
+            Application onCreate
+            Application:$this
+            context:${FContext.get()}
+            appName:${Constant.APP_NAME}
+        """.trimIndent()
+        }
     }
 }
