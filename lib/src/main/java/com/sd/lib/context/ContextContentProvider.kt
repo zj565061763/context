@@ -1,39 +1,23 @@
-package com.sd.lib.context;
+package com.sd.lib.context
 
-import android.content.ContentProvider;
-import android.content.ContentValues;
-import android.database.Cursor;
-import android.net.Uri;
+import android.content.ContentProvider
+import android.content.ContentValues
+import android.database.Cursor
+import android.net.Uri
 
-public final class ContextContentProvider extends ContentProvider {
-    @Override
-    public boolean onCreate() {
-        FContext.set(getContext());
-        return true;
+internal class ContextContentProvider : ContentProvider() {
+    override fun onCreate(): Boolean {
+        FContext.set(context)
+        return true
     }
 
-    @Override
-    public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
-        return null;
-    }
+    override fun query(uri: Uri, projection: Array<String>?, selection: String?, selectionArgs: Array<String>?, sortOrder: String?): Cursor? = null
 
-    @Override
-    public String getType(Uri uri) {
-        return null;
-    }
+    override fun getType(uri: Uri): String? = null
 
-    @Override
-    public Uri insert(Uri uri, ContentValues values) {
-        return null;
-    }
+    override fun insert(uri: Uri, values: ContentValues?): Uri? = null
 
-    @Override
-    public int delete(Uri uri, String selection, String[] selectionArgs) {
-        return 0;
-    }
+    override fun delete(uri: Uri, selection: String?, selectionArgs: Array<String>?): Int = 0
 
-    @Override
-    public int update(Uri uri, ContentValues values, String selection, String[] selectionArgs) {
-        return 0;
-    }
+    override fun update(uri: Uri, values: ContentValues?, selection: String?, selectionArgs: Array<String>?): Int = 0
 }
